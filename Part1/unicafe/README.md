@@ -1,70 +1,35 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Unicafe Feedback Statistic
 
-## Available Scripts
+Unicafe collects feedback from its customers. I have implemented a web application for collecting customer feedback. There are only three options for feedback: good, neutral, and bad. The application displays the total number of collected feedback for each category. The application uses multiple and seperate components for rendering all of the statistics. [Unicafe Exercise]
 
-In the project directory, you can run:
+[//]: # (reference links used in the body)
 
-### `npm start`
+   [Unicafe Exercise]: <https://fullstackopen.com/en/part1/a_more_complex_state_debugging_react_apps#exercises-1-6-1-14>
+   
+   ## Components
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ 1. App 
+ 2. Heading1
+ 3. Button
+ 4. Statistics
+ 5. Count
+ 6. Total
+ 7. Average
+ 8. Percentage
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**App Component**  is the root component using ***Heading1***, ***Button*** and ***Statistics*** component.
 
-### `npm test`
+ **Heading1 Component**  returns <h 1> tag heading .
+ 
+ **Button Component**  displays button to add feedback good, bad and neutral.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ **Statistics**  gives statistics about the gathered feedback using ***Count***, ***Total*** , ***Average*** and ***Percentage*** component.
 
-### `npm run build`
+ **Count Component**  counts the number of feedback(good, bad, neutral) gathered.
+ 
+ **Total Component**  returns total number of  feedback(good, bad, neutral) gathered.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ **Average Component**  returns average of  feedback(good, bad, neutral) gathered.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ **Percentage Component**  returns percentage of positive feedback(good) gathered.
