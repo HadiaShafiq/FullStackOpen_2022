@@ -65,6 +65,7 @@ const Statistics = (props) => {
         </>
     )   
 };
+
 const Count = (props) => {
     return (
         <tr>
