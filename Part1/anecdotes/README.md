@@ -1,70 +1,41 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Anecdotes
 
-In the project directory, you can run:
+The web application displays **Anecdote of the day** and **Anecdote  with the Highest Votes**. The anecdotes are stored in an object and are randomly displayed using  **Next Anecdote**  button. The anecdote can also be voted. And based on the highest vote **Anecdote  with the Highest Votes** is shown. The application uses multiple components for rendering anecdotes.   
+[Anecdotes Exercise]
 
-### `npm start`
+[//]: # (reference links used in the body)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  [Anecdotes Exercise]: <https://fullstackopen.com/en/part1/a_more_complex_state_debugging_react_apps#exercises-1-6-1-14>
+   
+   ## Components
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ 1. App 
+ 2. Heading1
+ 3. Button
+ 4. GetAnecdote
+ 5. GetVote
 
-### `npm test`
+**App Component**  is the root component using ***Heading1***, ***Button*** , ***GetAnecdote*** and  ***GetVote*** component. There are three states maintained using the **State Hooks**. The states are explained  in the [State](#States) Section.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ **Heading1  Component**  returns <h 1> tag heading.
+ 
+ **Button Component** creates a button with a text and add an onclick event.
 
-### `npm run build`
+ **GetAnecdote Component** returns an anecdote based on a random index generated.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ **GetVote Component**  returns the vote of the selected anecdote.
+ 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ## States  
+   1. Selected
+   2. Votes
+   3. MaxVoteIndex
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ **Selected State**  maintains the index of selected anecdote. The index is randomly generated.
+ 
+ **Votes  State**  maintains the votes of each anecdote. It is an array initialized 0. 
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ **MaxVoteIndex State**  maintains the Index of the anecdote which has the highest vote. When the vote button is clicked the MaxVoteIndex value changes if the selected anecdote vote is higher/greater.
+ 
